@@ -62,7 +62,9 @@ def build_parser() -> argparse.ArgumentParser:
         dest="command", required=True, parser_class=AgentVaultArgumentParser
     )
 
-    init_parser = subparsers.add_parser("init", help="Initialize Agent-Vault in a project directory")
+    init_parser = subparsers.add_parser(
+        "init", help="Initialize Agent-Vault in a project directory"
+    )
     init_parser.add_argument("path", nargs="?", default=".", help="Project directory")
     init_parser.add_argument("--name", help="Human-readable project name")
 

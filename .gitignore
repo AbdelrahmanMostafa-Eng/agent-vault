@@ -1,0 +1,17 @@
+*.py[cod]
+__pycache__/
+.venv/
+dist/
+build/
+*.egg-info/
+.agentvault/
+.agentvault.tmp-*/
+*.db
+*.db-*
+*.key
+*.zip
+.coverage
+.coverage.*
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
